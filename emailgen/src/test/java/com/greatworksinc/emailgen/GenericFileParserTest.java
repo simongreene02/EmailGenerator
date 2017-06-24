@@ -4,11 +4,11 @@ import static com.google.common.truth.Truth.assertThat;
 
 import org.junit.Test;
 
-public class FirstNameFileParserTest {
+public class GenericFileParserTest {
 
 	@Test
 	public void next() {
-		FirstNameFileParser parser = new FirstNameFileParser("fakeFirstNames.txt");
+		GenericFileParser parser = new GenericFileParser("fakeFirstNames.txt");
 		assertThat(parser.next()).isEqualTo("A");
 		assertThat(parser.next()).isEqualTo("B");
 		assertThat(parser.next()).isEqualTo("C");
@@ -17,7 +17,7 @@ public class FirstNameFileParserTest {
 	
 	@Test
 	public void next_callingTooMany() {
-		FirstNameFileParser parser = new FirstNameFileParser("fakeFirstNames.txt");
+		GenericFileParser parser = new GenericFileParser("fakeFirstNames.txt");
 		assertThat(parser.next()).isEqualTo("A");
 		assertThat(parser.next()).isEqualTo("B");
 		assertThat(parser.next()).isEqualTo("C");

@@ -4,11 +4,11 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class FileParserTest {
+public class BufferedFileParserTest {
 
 	@Test
 	public void test() {
-		new FileParser().bufferFile();
+		new BufferedFileParser().bufferFile();
 	}
 
 	

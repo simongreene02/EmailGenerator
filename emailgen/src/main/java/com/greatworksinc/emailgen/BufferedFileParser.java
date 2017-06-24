@@ -16,8 +16,8 @@ import org.slf4j.LoggerFactory;
 
 import com.google.common.io.Resources;
 
-public class FileParser {
-	private static final Logger log = LoggerFactory.getLogger(FileParser.class);
+public class BufferedFileParser {
+	private static final Logger log = LoggerFactory.getLogger(BufferedFileParser.class);
 	
 	// buffering
 	public void bufferFile() {
